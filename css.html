@@ -1,0 +1,3217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    
+    
+  <title>Aulas de css</title>
+  <style>
+   section{
+     margin-left:20px;
+     margin:10px;
+   }
+  </style>
+</head>
+
+<body>
+    <header>
+    <h1 class="c">codeATOES</h1>
+    <h3>Aulas de CSS </h3>
+  </header>
+<section>
+          <h2>Aula 1</h2>
+          <h3>
+            <!--Tab to edit-->
+            Introdução ao CSS
+          </h3>
+          
+          
+          <P>
+            <!--Tab to edit-->
+            CSS (Cascading Style Sheets) é uma linguagem de folha de estilo utilizada para descrever a aparência e formatação de um documento escrito em HTML (Hypertext Markup Language). É comumente usado para controlar a aparência visual de páginas da web e interfaces de usuário.
+            <br>
+              <!--Tab to edit-->
+            </br>
+            O CSS funciona selecionando elementos HTML e aplicando estilos a eles. Ele permite que você modifique vários aspectos dos elementos, como tamanho, cor, fonte, espaçamento e posicionamento. Os estilos podem ser aplicados diretamente aos elementos HTML usando estilos embutidos (inline styles), ou podem ser definidos em um arquivo CSS separado e vinculado ao documento HTML.<br>
+              <!--Tab to edit-->
+            </br>
+            
+            Aqui está um exemplo de código CSS que define a cor e o tamanho da fonte de todos os parágrafos em um documento HTML:
+            
+            <div>
+            p {
+            color: blue;
+            font-size: 16px;
+            }
+           </div>
+            
+            No exemplo acima, o seletor CSS "p" é usado para direcionar todos os elementos `<p>` no documento HTML. A propriedade `color` é definida como "blue" e a propriedade `font-size` é definida como "16px".
+            <br>
+              <!--Tab to edit-->
+             
+            </br>
+            
+            <div class="code-editor-container">
+  <textarea id="lesson1-input" class="code-input"><p>Eu faço curso no CodeATOES </p>
+  <style>
+   
+    p {
+      color: blue;
+      font-size: 16px;
+    }
+  </style>
+  
+  
+  </textarea>
+  <button onclick="runCode('lesson1')" class="run-button">Click aqui para Executar</button>
+  <iframe id="lesson1-output" class="output-frame"></iframe>
+</div>
+
+
+            
+              O CSS oferece uma ampla variedade de propriedades e valores que podem ser usados para estilizar elementos HTML. Algumas propriedades CSS comuns incluem:
+            <br>
+              <!--Tab to edit-->
+            </br>
+              - `color`: Define a cor do texto.
+              - `font-size`: Define o tamanho da fonte.
+              - `background-color`: Define a cor de fundo de um elemento.
+              - `margin`: Define a margem ao redor de um elemento.
+              - `padding`: Define o preenchimento dentro de um elemento.
+              - `border`: Define as propriedades da borda de um elemento.
+              - `width` e `height`: Definem as dimensões de um elemento.
+              - `display`: Especifica como um elemento deve ser exibido.
+            <br>
+              <!--Tab to edit-->
+            </br>
+              Esses são apenas alguns exemplos, e existem muitas outras propriedades e valores CSS disponíveis para diferentes propósitos de estilização.
+            <br>
+              <!--Tab to edit-->
+            </br>
+              O CSS também suporta vários seletores que permitem direcionar elementos específicos ou grupos de elementos. Por exemplo, você pode usar seletores de classe, seletores de ID, seletores de atributo e pseudo-classes para aplicar estilos a elementos específicos com base em determinados critérios.
+            <br>
+              <!--Tab to edit-->
+            </br>
+              Em resumo, o CSS é uma ferramenta poderosa para controlar a apresentação visual de páginas da web e criar interfaces de usuário atraentes na web.
+          </P>
+          
+          <button class="anterior">Aula Anterior</button>
+          <button class="proximo">Próxima Aula</button>
+        </section> 
+        
+        
+        
+        
+        <section class="hidden">
+            <h2>Aula 2</h2>
+            <h3>
+              <!--Tab to edit-->
+              exemplo
+              Apresentando CSS
+            </h3>
+            <p>
+              <!--Tab to edit-->
+              Aqui você pode ver uma página web simples que é denominado
+              usando CSS.<br>
+                <!--Tab to edit-->
+              </br>
+              Este exemplo usa dois documentos: o arquivo HTML ( example.html)
+              e um arquivo CSS separado ( example.css). A quinta linha de HTML usa o
+              <Link> elemento para indicar onde o arquivo CSS está localizado.
+              
+              
+                <div class="coe-editor-container">
+  <textarea id="les1-input" class="code-input">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página Web Simples</title>
+  <style>
+    /* CSS */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffd215;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    
+    p {
+      color: #666;
+      line-height: 1.5;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Título da Página</h1>
+    <p>Este é um parágrafo de exemplo.</p>
+    <p>Este é outro parágrafo.</p>
+  </div>
+</body>
+</html>
+  
+  </textarea>
+  <button onclick="runCode('les1')" class="run-button">Click aqui para Executar</button>
+  <iframe id="les1-output" class="output-frame"></iframe>
+</div>
+
+              
+              
+            </p>
+            <p>
+              <!--Tab to edit-->
+             
+
+Neste exemplo, temos um documento HTML simples que utiliza CSS para estilização. O CSS é inserido entre as tags &lt;style&gt; dentro do cabeçalho &lt;head&gt; do documento.
+<br>
+  <!--Tab to edit-->
+</br>
+No CSS, definimos estilos para o `body`, `h1`, `p` e `.container`. O `body` define a família de fontes, cor de fundo e margens da página. O `h1` define a cor do texto e alinhamento centralizado. O `p` define a cor do texto e o espaçamento entre linhas. A classe `.container` define a largura máxima, margens, cor de fundo, preenchimento interno e borda arredondada para um contêiner específico.
+<br>
+  <!--Tab to edit-->
+</br>
+Dentro do &lt;body&gt;, temos um &lt;div&gt; com a classe `container`, que envolve o título &lt;h1&gt; e dois parágrafos &lt;p&gt;. Esses elementos são estilizados de acordo com as regras CSS definidas.
+<br>
+  <!--Tab to edit-->
+</br>
+Ao abrir esse código em um navegador, você verá uma página web simples com um título centralizado, parágrafos e um contêiner com bordas arredondadas, tudo estilizado usando CSS.
+            </p>
+            
+            
+            <button class="anterior">Aula Anterior</button>
+            <button class="proximo" >Próxima Aula</button>
+          </section>
+          
+          
+          <section class="hidden">
+          <h2>Aula 3 </h2>
+         <h3>
+            <!--Tab to edit-->
+            CSS EXTERNO 
+          </h3>
+          
+          <P>
+            <!--Tab to edit-->
+            Para usar um arquivo CSS externo em seu documento HTML, você precisa seguir estas etapas:
+<br>
+  <!--Tab to edit-->
+</br>
+1. Crie um arquivo separado com a extensão `.css` e salve-o com um nome significativo, por exemplo, `styles.css`. Este arquivo conterá todo o seu código CSS.
+<br>
+  <!--Tab to edit-->
+</br>
+2. Dentro da seção &lt;head&gt; do seu documento HTML, adicione a seguinte linha de código para vincular o arquivo CSS externo:
+<br>
+  <!--Tab to edit-->
+</br>
+
+
+<div>
+<link rel="stylesheet" href="caminho/do/arquivo.css">
+</div>
+
+Certifique-se de substituir "caminho/do/arquivo.css" pelo caminho real para o seu arquivo CSS externo. Isso pode ser um caminho relativo em relação ao seu arquivo HTML atual ou um URL absoluto para um arquivo hospedado em algum lugar na web.
+<br>
+  <!--Tab to edit-->
+</br>
+
+Aqui está um exemplo completo:
+
+ <div class="code-editor-container">
+  <textarea id="01-input" class="code-input">
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="caminho/do/arquivo.css">
+</head>
+<body>
+    <h1>Exemplo de uso de CSS externo</h1>
+    <p>Este é um parágrafo de exemplo.</p>
+</body>
+</html>
+  </textarea>
+  <button onclick="runCode('01')" class="run-button">Click aqui para Executar</button>
+  <iframe id="01-output" class="output-frame"></iframe>
+</div>
+
+<br>
+  <!--Tab to edit-->
+</br>
+
+Dessa forma, o arquivo CSS externo será aplicado a todas as tags HTML no seu documento, de acordo com as regras definidas no arquivo CSS. Certifique-se de que o caminho para o arquivo CSS esteja correto e que o arquivo CSS em si contenha as regras de estilo desejadas.
+
+          </P>
+          <br>
+            <!--Tab to edit-->
+          </br>
+     <h4>
+       <!--Tab to edit-->
+       &lt;Link&gt;
+     </h4>     
+          <p>
+            <!--Tab to edit-->
+            o &lt;link&gt; elemento pode ser usado em um
+              documento HTML para dizer ao navegador onde
+              encontrar o arquivo CSS utilizado para o estilo
+              da página. É um elemento vazio (o que significa
+              que não precisa de uma tag de fechamento), e
+              vive dentro do < head> elemento. Ele deve usar
+                três atributos:
+          </p>
+          <br>
+            <!--Tab to edit-->
+          </br>
+          
+          <h4>
+            <!--Tab to edit-->
+            href 
+          </h4>
+          <p>
+            <!--Tab to edit-->
+            Isto especifica o caminho para o arquivo CSS (que
+            muitas vezes é colocado em uma pasta chamada css
+            ou estilos). 
+          </p>
+          
+          <br>
+            <!--Tab to edit-->
+          </br>
+          <h4>
+            <!--Tab to edit-->
+            tipo 
+          </h4>
+          <p>
+            <!--Tab to edit-->
+            Este atributo especifica o tipo de documento 
+
+que está sendo vinculado. O valor deve ser text 
+
+/ css.
+          </p>
+          <br>
+            <!--Tab to edit-->
+          </br>
+          
+          <h4>
+            <!--Tab to edit-->
+            rel
+          </h4>
+          <p>
+            <!--Tab to edit-->
+            
+            Isto especifica a relação entre a página 
+
+HTML eo arquivo que está vinculado. 
+
+O valor deve ser stylesheet quando liga 
+para um arquivo CSS.<br>
+  <!--Tab to edit-->
+</br>
+Uma página HTML pode usar mais do que 
+uma folha de estilo CSS. Para fazer isso, ele 
+poderia ter um &lt;link&gt;
+elemento para cada arquivo CSS que utiliza. Por 
+exemplo, alguns autores usam um arquivo CSS 
+para controlar a apresentação (tais como fontes 
+e cores) e um segundo para controlar o layout.
+          </p>
+ <div class="code-editor-container">
+             <textarea id="0mm1-input" class="code-input">
+          <! DOCTYPE html> 
+
+<html>
+
+<Head>
+<Title> Usando CSS externa </ title> <link href = tipo "css / styles.css" = 
+"text / css" 
+rel = "stylesheet" /> </ head> 
+<body>
+<H1> Projecto CodeATOES </h1> <p> Existe uma grande diversidade de cursos que CodeATOES oferece. </p> </body> </html>    </textarea>
+  <button onclick="runCode('0mm1')" class="run-button">Click aqui para Executar</button>
+  <iframe id="0mm1-output" class="output-frame"></iframe>
+  </div>
+          
+          
+           <div class="code-editor-container">
+             <textarea id="lesson1-input" class="code-input"> 
+          
+          body {
+
+font-family: arial;
+
+background-color: rgb (185179175);} h1 {
+cor: rgb (255,255,255);}
+          
+          
+  </textarea>
+  <button onclick="runCode('lesson1')" class="run-button">Click aqui para Executar</button>
+  <iframe id="lesson1-output" class="output-frame"></iframe>
+</div>
+ 
+          
+          
+          
+          <button class="anterior">Aula Anterior</button>
+          <button class="proximo">Próxima Aula</button>
+        </section> 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <section class="hidden">
+            <h2>Aula 4</h2>
+           <h4>
+              <!--Tab to edit-->
+              Usando CSS interno
+            </h4>
+            <p>
+              <!--Tab to edit-->
+              <h5>
+                <!--Tab to edit-->
+                &lt;Style&gt;
+              </h5>
+              <p>
+                <!--Tab to edit-->
+                Você também pode incluir regras CSS dentro de
+                uma página HTML, colocando-os dentro de um style>
+                  elemento, que normalmente fica no interior da tag &lt;head&gt;
+                
+              </p>
+              
+              
+            </p>
+            <bt>
+              <!--Tab to edit-->
+            </bt>
+            <p>
+              <!--Tab to edit-->
+              O CSS interno é uma forma de aplicar estilos CSS a um documento HTML, mas em vez de usar um arquivo CSS externo, os estilos são definidos diretamente no próprio documento HTML. Isso é feito usando a tag &lt;style&gt; no cabeçalho do documento ou dentro de elementos HTML específicos.
+<br>
+  <!--Tab to edit-->
+</br>
+<p></p>Aqui está um exemplo de como usar o CSS interno:
+            </p>
+            <div class="code-editor-container">
+              <textarea id="lyy1-input" class="code-input">
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de CSS interno</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .destaque {
+      background-color: yellow;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Título do Documento</h1>
+  <p>Este é um parágrafo comum.</p>
+  <p class="destaque">Este é um parágrafo com a classe "destaque".</p>
+</body>
+</html>
+
+
+  </textarea>
+  <button onclick="runCode('lyy1')" class="run-button">Click aqui para Executar</button>
+  <iframe id="lyy1-output" class="output-frame"></iframe>
+</div>
+ 
+
+
+<br>
+  <!--Tab to edit-->
+</br>
+
+Neste exemplo, os estilos são definidos dentro da tag &lt;style&gt; no cabeçalho do documento HTML. Você pode adicionar regras CSS para diversos seletores, como `body`, `h1`, `p` e a classe `.destaque`. Esses estilos serão aplicados aos elementos correspondentes no documento HTML.
+<br>
+  <!--Tab to edit-->
+</br>
+Uma vantagem do CSS interno é que ele permite que você mantenha todos os estilos relacionados a um documento HTML em um só lugar, o que pode facilitar a manutenção do código. No entanto, é importante lembrar que o CSS interno afeta apenas o documento HTML específico em que está sendo usado. Se você tiver vários documentos HTML que precisam do mesmo estilo, seria mais eficiente usar um arquivo CSS externo para evitar duplicação de código.
+            </p>
+            
+            
+            
+            
+            
+            
+            <button class="anterior">Aula Anterior</button>
+            <button class="proximo">Próxima Aula</button>
+          </section>
+    
+    
+    
+          
+          
+          <section class="hidden">
+          <h2>Aula 5</h2>
+          <h3>
+            <!--Tab to edit-->
+            
+            Selectores
+          </h3>
+          
+          <p>
+            <!--Tab to edit-->
+            Para estilizar elementos específicos em uma página usando seletores CSS, você pode seguir estas etapas:
+<br>
+  <!--Tab to edit-->
+</br>
+ Identifique o elemento que deseja estilizar: Observe o código HTML da página e determine o seletor apropriado para o elemento que você deseja estilizar. Pode ser uma classe, um ID, um tipo de elemento ou um seletor mais complexo, como um seletor de atributo.
+ <br>
+   <!--Tab to edit-->
+ </br>
+
+Escreva a regra CSS: Após identificar o seletor, escreva uma regra CSS para definir os estilos desejados. A sintaxe básica de uma regra CSS é a seguinte:
+<br>
+  <!--Tab to edit-->
+</br>
+   <div>
+   seletor {
+     propriedade: valor;
+     /* adicione mais propriedades e valores conforme necessário */
+   }
+  </div>
+<br>
+  <!--Tab to edit-->
+</br>
+   Substitua "seletor" pelo seletor específico que você identificou e adicione as propriedades de estilo desejadas, como cor, fonte, tamanho, margem, etc.
+<br>
+  <!--Tab to edit-->
+</br>
+ Aplique a regra CSS: Existem várias maneiras de aplicar a regra CSS a um elemento específico:
+<br>
+  <!--Tab to edit-->
+</br>
+   - Adicione o estilo inline: Você pode adicionar o estilo diretamente ao elemento HTML usando o atributo `style`. Por exemplo:
+
+    <br>
+      <!--Tab to edit-->
+    </br>
+    <div>
+     &lt;div style="propriedade: valor;"&gt;&lt;/div&gt;
+     </div>
+<br>
+  <!--Tab to edit-->
+</br>
+   - Use uma classe: Adicione uma classe ao elemento HTML e defina a regra CSS correspondente em seu arquivo CSS externo ou em uma tag &lt;style&gt; no cabeçalho do documento. Por exemplo:
+
+     <br>
+       <!--Tab to edit-->
+     </br>
+     
+     
+     <div>
+     &lt;div class="minha-classe"&gt;&lt;/div&gt;
+     </div>
+     
+     <br>
+       <!--Tab to edit-->
+     </br>
+
+     
+     
+     <div>
+     .minha-classe {
+       propriedade: valor;
+     }
+     
+   </div>
+   
+   
+   
+<br>
+  <!--Tab to edit-->
+</br>
+   - Use um ID: Adicione um ID exclusivo ao elemento HTML e defina a regra CSS correspondente em seu arquivo CSS externo ou em uma tag &lt;style&gt; no cabeçalho do documento. Por exemplo:
+
+     <br>
+       <!--Tab to edit-->
+     </br>
+     
+     
+     <div>
+     &lt;div id="meu-id"&gt;&lt;/div&gt;
+    </div>
+
+     
+     <div>
+     #meu-id {
+       propriedade: valor;
+     }
+     </div>
+
+<br>
+  <!--Tab to edit-->
+</br>
+   - Use um seletor mais específico: Combinando seletores, você pode criar regras CSS mais específicas para estilizar elementos específicos. Por exemplo:
+   
+
+     
+     <div class="container">
+       <p>Texto de exemplo</p>
+     </div>
+    
+<style>
+    css
+     .container p {
+       propriedade: valor;
+     }
+     </style>
+     
+     
+     
+     <br>
+       <!--Tab to edit-->
+     </br>
+
+     Nesse caso, a regra CSS será aplicada apenas aos elementos `<p>` que são descendentes diretos de um elemento com a classe "container".
+
+Atualize o estilo conforme necessário: Você pode adicionar várias propriedades e valores à sua regra CSS para estilizar completamente o elemento conforme desejado. Experimente diferentes valores e propriedades para alcançar o resultado desejado.<br>
+  <!--Tab to edit-->
+</br>
+
+Lembre-se de que a cascata do CSS e a especificidade dos seletores podem afetar a aplicação dos estilos. Portanto, verifique se suas regras CSS estão sendo aplicadas corretamente e, se necessário, ajuste a especificidade ou a ordem das regras.
+<br>
+  <!--Tab to edit-->
+</br>
+Usando essas etapas, você poderá estilizar elementos específicos em uma página usando seletores CSS.
+          </p>
+          
+          
+          
+          
+          
+          
+          <button class="anterior">Aula Anterior</button>
+          <button class="proximo">Próxima Aula</button>
+        </section> 
+        
+        
+        
+        
+        <section class="hidden">
+            <h2>Aula 6</h2>
+           <h3>
+              <!--Tab to edit-->
+              Mais sobre seletores
+            </h3>
+            
+            <p>
+              <!--Tab to edit-->
+              
+              Os seletores CSS são usados para selecionar os elementos HTML nos quais você deseja aplicar estilos. Existem vários tipos de seletores CSS que você pode usar para segmentar elementos de maneiras diferentes. Aqui estão alguns dos seletores mais comuns:
+<br>
+  <!--Tab to edit-->
+</br>
+Seletor de elemento: Seleciona elementos HTML com base em seus nomes de tag. Por exemplo, o seletor `p` seleciona todos os elementos &lt;p&gt; no documento.
+
+
+                   <div class="code-editor-container">
+                 <textarea id="vuuup-input" class="code-input">
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <p>Este é um parágrafo.</p>
+</body>
+</html>
+
+                            </textarea>
+                            <button onclick="runCode('vuuup')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="vuuup-output" class="output-frame"></iframe>
+                            </div>
+              
+              
+
+
+
+
+
+<br>
+  <!--Tab to edit-->
+</br>
+
+ Seletor de classe: Seleciona elementos HTML com base em suas classes atribuídas. O seletor de classe é denotado pelo prefixo `.` seguido pelo nome da classe. Por exemplo, o seletor `.destaque` seleciona todos os elementos que possuem a classe "destaque".
+                    <div class="code-editor-container">
+                 <textarea id="viip-input" class="code-input">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <p class="highlight">Texto de destaque com fundo amarelo</p>
+</body>
+</html>
+                            </textarea>
+                            <button onclick="runCode('viip')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="viip-output" class="output-frame"></iframe>
+                            </div>
+              
+              
+ 
+ 
+ 
+<br>
+  <!--Tab to edit-->
+</br>
+ Seletor de ID: Seleciona um único elemento HTML com base em seu atributo "id". O seletor de ID é denotado pelo prefixo `#` seguido pelo nome do ID. Por exemplo, o seletor `#meu-elemento` seleciona o elemento que possui o ID "meu-elemento".
+
+
+                   <div class="code-editor-container">
+                 <textarea id="ccp-input" class="code-input">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        #special-text {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <p id="special-text">Texto especial em vermelho</p>
+</body>
+</html>
+
+
+                            </textarea>
+                            <button onclick="runCode('ccp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="ccp-output" class="output-frame"></iframe>
+                            </div>
+              
+              
+
+<br>
+  <!--Tab to edit-->
+</br>
+ Seletor de descendência: Seleciona elementos HTML com base em sua hierarquia no documento. O seletor de descendência é denotado por espaços entre os seletores.
+ <br>
+   <!--Tab to edit-->
+ </br>
+ Por exemplo, o seletor `div p` seleciona todos os elementos &lt;p&gt; que estão dentro de um elemento &lt;div&gt;.
+
+
+
+                   <div class="code-editor-container">
+                 <textarea id="zzp-input" class="code-input">
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        div p {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <div>
+        <p>Texto em roxo</p>
+    </div>
+</body>
+</html>
+                            </textarea>
+                            <button onclick="runCode('zzp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="zzp-output" class="output-frame"></iframe>
+                            </div>
+              
+                                <div class="code-editor-container">
+                                  <textarea id="kzp-input" class="code-input"> 
+              
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        ul li {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <ul>
+        <li>Item de lista em azul</li>
+        <li>Outro item de lista em azul</li>
+    </ul>
+</body>
+</html>
+                            </textarea>
+                            <button onclick="runCode('kzp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="kzp-output" class="output-frame"></iframe>
+                            </div>
+              
+     
+              
+              
+              
+              <br>
+                <!--Tab to edit-->
+              </br>
+
+
+
+ Seletor de filho direto: Seleciona elementos HTML que são filhos diretos de outro elemento. O seletor de filho direto é denotado pelo caractere `>` entre dois seletores. Por exemplo, o seletor `div > p` seleciona todos os elementos &lt;p&gt; que são filhos diretos de um elemento &lt;div&gt;.
+
+                   <div class="code-editor-container">
+                 <textarea id="vyip-input" class="code-input">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        div > p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <div>
+        <p>Texto em negrito</p>
+        <span>
+            <p>Texto regular</p>
+        </span>
+    </div>
+</body>
+</html>
+
+
+                            </textarea>
+                            <button onclick="runCode('vyip')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="vyip-output" class="output-frame"></iframe>
+                            </div>
+              
+              
+
+
+<br>
+  <!--Tab to edit-->
+</br>
+
+ Seletor de atributo: Seleciona elementos HTML com base em seus atributos. Você pode especificar o nome do atributo e, opcionalmente, o valor do atributo. Por exemplo, o seletor `[type="text"]` seleciona todos os elementos que possuem o atributo `type` com o valor "text".
+
+
+              
+              
+            </p>
+                               <div class="code-editor-container">
+                 <textarea id="rat-input" class="code-input">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        p[title="hello"] {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <p title="hello">Texto verde com título "hello"</p>
+</body>
+</html>
+
+
+                            </textarea>
+                            <button onclick="runCode('rat')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="rat-output" class="output-frame"></iframe>
+                            </div>
+              
+            
+            
+            
+            
+            <button class="anterior">Aula Anterior</button>
+            <button class="proximo">Próxima Aula</button>
+          </section>
+    
+    
+    
+    <section class="hidden">
+      <h2>Aula 7</h2>
+      <h3>
+        <!--Tab to edit-->
+        Selectores
+      </h3>
+      
+      
+      
+      <p>
+        <!--Tab to edit-->
+        
+
+
+7. Seletor de pseudo-classe: Seleciona elementos HTML com base em um estado ou interação específica. As pseudo-classes são denotadas pelo uso de dois pontos `:` antes do nome da pseudo-classe. Por exemplo, o seletor `a:hover` seleciona os links quando o cursor do mouse está sobre eles.
+
+
+                   <div class="code-editor-container">
+                 <textarea id="casp-input" class="code-input">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        p:hover {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <p>Passe o mouse sobre este texto para ver o efeito</p>
+</body>
+</html>
+
+
+                            </textarea>
+                            <button onclick="runCode('casp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="casp-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+
+
+
+
+8. Seletor de pseudo-elemento: Seleciona partes específicas de um elemento HTML. Os pseudo-elementos também são denotados pelo uso de dois pontos `:` antes do nome do pseudo-elemento. Por exemplo, o seletor `::first-line` seleciona a primeira linha de um bloco de texto.
+
+
+
+                   <div class="code-editor-container">
+                 <textarea id="vin-input" class="code-input">
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        p::first-line {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <p>Este é um parágrafo com a primeira linha em vermelho.</p>
+</body>
+</html>
+
+                            </textarea>
+                            <button onclick="runCode('vin')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="vin-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+<br>
+  <!--Tab to edit-->
+</br>
+
+
+Seletor de adjacente: Seleciona o elemento imediatamente adjacente a outro elemento. O seletor de adjacente é denotado pelo caractere `+` entre os dois seletores. Por exemplo, o seletor `h2 + p` seleciona o elemento &lt;p&gt; que é imediatamente após um elemento &lt;h2&gt;.
+
+
+
+
+
+                   <div class="code-editor-container">
+                 <textarea id="vxxp-input" class="code-input">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        h2 + p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <h2>Título</h2>
+    <p>Este parágrafo terá a fonte em negrito por ser adjacente ao título h2.</p>
+    <p>Este parágrafo não terá a fonte em negrito.</p>
+</body>
+</html>
+
+
+                            </textarea>
+                            <button onclick="runCode('vxxp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="vxxp-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+
+<br>
+  <!--Tab to edit-->
+</br>
+
+ Seletor de irmão geral: Seleciona todos os elementos irmãos que seguem um determinado elemento. O seletor de irmão geral é denotado pelo uso de um til `~` entre os dois seletores. Por exemplo, o seletor `p ~ span` seleciona todos os elementos &lt;span&gt; que seguem um elemento &lt;p&gt;.
+
+
+
+
+                   <div class="code-editor-container">
+                 <textarea id="vtyp-input" class="code-input">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        h2 ~ p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <h2>Título</h2>
+    <p>Este parágrafo terá a cor azul por ser irmão do título h2.</p>
+    <p>Este parágrafo também terá a cor azul por ser irmão do título h2.</p>
+    <div>
+        <p>Este parágrafo não terá a cor azul por não ser irmão do título h2.</p>
+    </div>
+</body>
+</html>
+
+                            </textarea>
+                            <button onclick="runCode('vtyp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="vtyp-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+
+
+ Seletor de negação: Seleciona elementos que não correspondem a um determinado seletor. O seletor de negação é denotado pelo uso de `:not()` seguido pelo seletor que você deseja excluir. Por exemplo, o seletor `p:not(.destaque)` seleciona todos os elementos `<p>` que não têm a classe "destaque".
+
+
+
+                   <div class="code-editor-container">
+                 <textarea id="css-input" class="code-input">
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        p:not(.special) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <p>Este parágrafo terá a cor vermelha por não possuir a classe "special".</p>
+    
+    
+    <p class="special">Este parágrafo não terá a cor vermelha por possuir a classe "special".</p>
+</body>
+</html>
+
+                            </textarea>
+                            <button onclick="runCode('css')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="css-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+
+
+
+ Seletor de atributo avançado: Permite selecionar elementos com base em padrões de atributos mais complexos. Alguns exemplos incluem:
+
+   - `[atributo^=valor]`: Seleciona elementos com um atributo que começa com um determinado valor.
+   - `[atributo$=valor]`: Seleciona elementos com um atributo que termina com um determinado valor.
+   - `[atributo*=valor]`: Seleciona elementos com um atributo que contém um determinado valor em qualquer lugar.
+
+
+
+
+                   <div class="code-editor-container">
+                 <textarea id="klop-input" class="code-input">
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        a[href^="https"] {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <a href="https://www.example.com">Link seguro</a>
+    <a href="http://www.example.com">Link não seguro</a>
+</body>
+</html>
+
+
+
+                            </textarea>
+                            <button onclick="runCode('klop')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="klop-output" class="output-frame"></iframe>
+                            </div>
+              
+
+      </p>
+      <button class="anterior">Aula Anterior</button>
+      <button class="proximo">Próxima Aula</button>
+    </section>
+    
+    
+    
+    
+    
+    <section class="hidden">
+      <h2>Aula 8</h2>
+      <h3>
+        <!--Tab to edit-->
+        Selectores 
+      </h3>
+      
+      
+     
+
+ Seletor de grupo: Permite agrupar vários seletores em uma única regra. Os seletores são separados por vírgulas. Por exemplo, o seletor `h1, h2, h3` seleciona todos os elementos &lt;h1&gt;, &lt;h2&gt; e &lt;h3&gt;.
+
+
+
+<div class="code-editor-container">
+                 <textarea id="kloip-input" class="code-input">
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        h1, h2, h3 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <h1>Título 1</h1>
+    <h2>Título 2</h2>
+    <h3>Título 3</h3>
+</body>
+</html>
+
+
+
+                            </textarea>
+                            <button onclick="runCode('kloip')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="kloip-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+
+
+Seletor de primeiro filho: Seleciona o primeiro elemento filho de um elemento pai. O seletor de primeiro filho é denotado por `:first-child`. Por exemplo, o seletor `li:first-child` seleciona o primeiro elemento &lt;li&gt; em uma lista.
+
+
+
+<div class="code-editor-container">
+                 <textarea id="kuiop-input" class="code-input">
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        div:first-child {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <div>Primeiro div</div>
+    <div>Segundo div</div>
+</body>
+</html>
+
+
+                            </textarea>
+                            <button onclick="runCode('kuiop')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="kuiop-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+
+<br>
+  <!--Tab to edit-->
+</br>
+
+
+Seletor de último filho: Seleciona o último elemento filho de um elemento pai. O seletor de último filho é denotado por `:last-child`. Por exemplo, o seletor `li:last-child` seleciona o último elemento &lt;li&gt; em uma lista.
+
+
+<br>
+  <!--Tab to edit-->
+</br>
+
+
+<div class="code-editor-container">
+                 <textarea id="kloiup-input" class="code-input">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        div:last-child {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <div>Primeiro div</div>
+    <div>Segundo div</div>
+</body>
+</html>
+
+
+                            </textarea>
+                            <button onclick="runCode('kloiup')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="kloiup-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+
+
+<br>
+  <!--Tab to edit-->
+</br>
+
+ Seletor de primeiro elemento de tipo: Seleciona o primeiro elemento de um determinado tipo dentro de seu elemento pai. O seletor de primeiro elemento de tipo é denotado por `:first-of-type`. Por exemplo, o seletor `p:first-of-type` seleciona o primeiro elemento &lt;p&gt; dentro de seu elemento pai.
+
+
+
+
+<div class="code-editor-container">
+                 <textarea id="kkkp-input" class="code-input">
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        p:first-of-type {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <p>Este parágrafo terá a fonte em negrito por ser o primeiro parágrafo.</p>
+    
+    
+    <p>Este parágrafo não terá a fonte em negrito por não ser o primeiro parágrafo.</p>
+</body>
+</html>
+
+
+                            </textarea>
+                            <button onclick="runCode('kkkp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="kkkp-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+
+<br>
+  <!--Tab to edit-->
+</br>
+
+
+
+ Seletor de último elemento de tipo: Seleciona o último elemento de um determinado tipo dentro de seu elemento pai. O seletor de último elemento de tipo é denotado por `:last-of-type`. Por exemplo, o seletor `p:last-of-type` seleciona o último elemento &lt;p&gt; dentro de seu elemento pai.
+
+
+
+<div class="code-editor-container">
+                 <textarea id="zip-input" class="code-input">
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        p:last-of-type {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <div>
+        <p>Este parágrafo não terá a cor vermelha por não ser o último parágrafo.</p>
+        
+        
+        <p>Este parágrafo terá a cor vermelha por ser o último parágrafo.</p>
+    </div>
+</body>
+</html>
+
+                            </textarea>
+                            <button onclick="runCode('zip')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="zip-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+
+<br>
+  <!--Tab to edit-->
+</br>
+
+
+
+
+ Seletor de elemento vazio: Seleciona elementos que não têm nenhum filho. O seletor de elemento vazio é denotado por `:empty`. Por exemplo, o seletor `div:empty` seleciona todos os elementos &lt;div&gt; que não têm conteúdo.
+
+
+
+<div class="code-editor-container">
+                 <textarea id="ktttp-input" class="code-input">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        p:empty {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <p>Este parágrafo não será exibido porque está vazio.</p>
+    <p>Este parágrafo será exibido porque não está vazio.</p>
+</body>
+</html>
+
+
+
+                            </textarea>
+                            <button onclick="runCode('ktttp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="ktttp-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+
+        
+        
+      </p>
+      <button class="anterior">Aula Anterior</button>
+      <button class="proximo">Próxima Aula</button>
+    </section>
+    
+    
+    
+    
+    
+    
+    <section class="hidden">
+      <h2>Aula 8</h2>
+     <h3>
+        <!--Tab to edit-->
+        Selectores
+      </h3>Seletor de irmãos adjacentes
+      <p>
+        <!--Tab to edit-->
+        
+        
+        Seletor de atributo com prefixo: Seleciona elementos com um atributo que começa com um determinado valor. O seletor de atributo com prefixo é denotado por `^=`. Por exemplo, o seletor `[atributo^=valor]` seleciona elementos em que o valor do atributo começa com "valor".
+        
+        
+        <div class="code-editor-container">
+                 <textarea id="kwwwp-input" class="code-input">
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        a[href^="https"] {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <a href="https://www.example.com">Link com prefixo https</a>
+    <a href="http://www.example.com">Link sem prefixo https</a>
+</body>
+</html>
+
+
+
+                            </textarea>
+                            <button onclick="runCode('kwwwp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="kwwwp-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+        
+        
+        
+        
+        <bt>
+          <!--Tab to edit-->
+        </bt>
+        
+        
+        Seletor de atributo com sufixo: Seleciona elementos com um atributo que termina com um determinado valor. O seletor de atributo com sufixo é denotado por `$=`. Por exemplo, o seletor `[atributo$=valor]` seleciona elementos em que o valor do atributo termina com "valor".
+        
+        
+        
+        
+        <div class="code-editor-container">
+                 <textarea id="klqqp-input" class="code-input">
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        a[href$=".pdf"] {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <a href="document.pdf">Link para um arquivo PDF</a>
+    <a href="document.docx">Link para um arquivo DOCX</a>
+</body>
+</html>
+
+
+                            </textarea>
+                            <button onclick="runCode('klqqp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="klqqp-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+        
+        
+        
+        <br>
+          <!--Tab to edit-->
+        </br>
+        
+        
+        Seletor de atributo com substring: Seleciona elementos com um atributo que contém um determinado valor em qualquer lugar. O seletor de atributo com substring é denotado por `*=`. Por exemplo, o seletor `[atributo*=valor]` seleciona elementos em que o valor do atributo contém "valor".
+        
+        
+        <div class="code-editor-container">
+                 <textarea id="kloaap-input" class="code-input">
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        a[href*="example"] {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <a href="https://www.example.com">Link para o site de exemplo</a>
+    <a href="https://www.test.com">Link para o site de teste</a>
+</body>
+</html>
+
+
+                            </textarea>
+                            <button onclick="runCode('kloaap')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="kloaap-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+        
+        
+        
+        
+        <br>
+          <!--Tab to edit-->
+        </br>
+        
+        
+     Seletor de atributo com correspondência exata: Seleciona elementos com um atributo que corresponde exatamente a um determinado valor. O seletor de atributo com correspondência exata é denotado por `=`. Por exemplo, o seletor `[atributo=valor]` seleciona elementos em que o valor do atributo é exatamente "valor".
+        
+        
+        
+        
+        <div class="code-editor-container">
+                 <textarea id="klrrp-input" class="code-input">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        input[type="email"] {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <input type="text" placeholder="Nome">
+    <input type="email" placeholder="E-mail">
+</body>
+</html>
+
+
+
+                            </textarea>
+                            <button onclick="runCode('klrrp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="klrrp-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+        
+        
+        <br>
+          <!--Tab to edit-->
+        </br>
+        
+         Seletor de link visitado: Seleciona links que foram visitados. O seletor de link visitado é denotado por `:visited`. Por exemplo, o seletor `a:visited` seleciona todos os links visitados.
+        
+        
+        
+        <div class="code-editor-container">
+                 <textarea id="xcp-input" class="code-input">
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        a:visited {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <a href="https://www.example.com">Link para um site visitado</a>
+    <a href="https://www.google.com">Link para um site não visitado</a>
+</body>
+</html>
+
+
+                            </textarea>
+                            <button onclick="runCode('xcp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="xcp-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+        
+        
+        
+        <br>
+          <!--Tab to edit-->
+        </br>
+        
+        Seletor de link não visitado: Seleciona links que não foram visitados. O seletor de link não visitado é denotado por `:link`. Por exemplo, o seletor `a:link` seleciona todos os links não visitados.
+        
+        
+        
+        <div class="code-editor-container">
+                 <textarea id="kjp-input" class="code-input">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        a:link {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <a href="https://www.example.com">Link para um site não visitado</a>
+    <a href="https://www.google.com">Link para um site visitado</a>
+</body>
+</html>
+
+
+
+                            </textarea>
+                            <button onclick="runCode('kjp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="kjp-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+        
+        
+        
+        
+        <br>
+          <!--Tab to edit-->
+        </br>
+        
+        Seletor de link ativo: Seleciona o link ativo, que é o link em que o usuário está interagindo no momento. O seletor de link ativo é denotado por `:active`. Por exemplo, o seletor `a:active` seleciona o link que está sendo clicado.
+        
+        
+        
+        
+        <div class="code-editor-container">
+                 <textarea id="krsp-input" class="code-input">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        a:active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <a href="https://www.example.com">Link para um site ativo</a>
+</body>
+</html>
+
+
+
+                            </textarea>
+                            <button onclick="runCode('krsp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="krsp-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+        
+        
+        
+        
+          <br>
+            <!--Tab to edit-->
+          </br>
+        
+     Seletor de link hover: Seleciona links quando o cursor do mouse está sobre eles. O seletor de link hover é denotado por `:hover`. Por exemplo, o seletor `a:hover` seleciona os links quando o cursor do mouse está sobre eles.
+        
+        
+        
+        
+        <div class="code-editor-container">
+                 <textarea id="tyo-input" class="code-input">
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <a href="https://www.example.com">Passe o mouse sobre este link</a>
+</body>
+</html>
+
+
+                            </textarea>
+                            <button onclick="runCode('tyo')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="tyo-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+        
+        
+        <br>
+          <!--Tab to edit-->
+        </br>
+        
+        
+        
+        
+       Seletor de link focus: Seleciona links que estão em foco, ou seja, quando são selecionados por meio de teclado ou outro método de navegação. O seletor de link focus é denotado por `:focus`. Por exemplo, o seletor `a:focus` seleciona os links que estão em foco.
+        
+        
+        <div class="code-editor-container">
+                 <textarea id="corp-input" class="code-input">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        input:focus {
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <input type="text" placeholder="Nome">
+</body>
+</html>
+
+
+
+                            </textarea>
+                            <button onclick="runCode('corp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="corp-output" class="output-frame"></iframe>
+                            </div>
+              
+
+
+        
+        
+        
+        
+        
+      </p>
+      <button class="anterior">Aula Anterior</button>
+      <button class="proximo">Próxima Aula</button>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    <section class="hidden">
+      <h2>Aula 8</h2>
+<br>
+  <!--Tab to edit-->
+  Selectores
+</br>
+        
+        
+
+ Seletor de primeiro filho de tipo: Seleciona o primeiro elemento de um determinado tipo que é filho direto de seu elemento pai. O seletor de primeiro filho de tipo é denotado por `:first-of-type`. Por exemplo, o seletor `p:first-of-type` seleciona o primeiro elemento `<p>` que é filho direto de seu elemento pai.
+
+        <div class="code-editor-container">
+                 <textarea id="coro-input" class="code-input">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        p:first-of-type {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <p>Primeiro parágrafo</p>
+    <p>Segundo parágrafo</p>
+</body>
+</html>
+
+
+
+
+                            </textarea>
+                            <button onclick="runCode('coro')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="coro-output" class="output-frame"></iframe>
+                            </div>
+              
+              
+<br>
+  <!--Tab to edit-->
+</br>
+
+
+Seletor de último filho de tipo: Seleciona o último elemento de um determinado tipo que é filho direto de seu elemento pai. O seletor de último filho de tipo é denotado por `:last-of-type`. Por exemplo, o seletor `p:last-of-type` seleciona o último elemento &lt;p&gt; que é filho direto de seu elemento pai.
+
+
+        <div class="code-editor-container">
+                 <textarea id="corrp-input" class="code-input">
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        p:last-of-type {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <p>Primeiro parágrafo</p>
+    <p>Segundo parágrafo</p>
+</body>
+</html>
+
+
+
+                            </textarea>
+                            <button onclick="runCode('corrp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="corrp-output" class="output-frame"></iframe>
+                            </div>
+              
+              
+<br>
+  <!--Tab to edit-->
+</br>
+
+ Seletor de nth-child: Seleciona elementos com base em uma fórmula matemática que especifica sua posição em relação aos elementos irmãos. O seletor de nth-child é denotado por `:nth-child()`. Por exemplo, o seletor `li:nth-child(2n)` seleciona os elementos `<li>` que têm uma posição par entre seus irmãos.
+
+        <div class="code-editor-container">
+                 <textarea id="cortp-input" class="code-input">
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        p:nth-child(2) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <p>Primeiro parágrafo</p>
+    <p>Segundo parágrafo</p>
+    <p>Terceiro parágrafo</p>
+</body>
+</html>
+
+
+
+                            </textarea>
+                            <button onclick="runCode('cortp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="cortp-output" class="output-frame"></iframe>
+                            </div>
+              
+              
+
+<br>
+  <!--Tab to edit-->
+</br>
+
+ Seletor de nth-last-child: Seleciona elementos com base em uma fórmula matemática que especifica sua posição em relação aos elementos irmãos, contando a partir do último elemento. O seletor de nth-last-child é denotado por `:nth-last-child()`. Por exemplo, o seletor `li:nth-last-child(2)` seleciona o segundo elemento `<li>` contando a partir do último elemento.
+
+        <div class="code-editor-container">
+                 <textarea id="carrp-input" class="code-input">
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        p:nth-last-child(2) {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <p>Primeiro parágrafo</p>
+    <p>Segundo parágrafo</p>
+    <p>Terceiro parágrafo</p>
+</body>
+</html>
+
+
+
+
+                            </textarea>
+                            <button onclick="runCode('carrp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="carrp-output" class="output-frame"></iframe>
+                            </div>
+              
+              
+<br>
+  <!--Tab to edit-->
+</br>
+
+
+<br>
+  <!--Tab to edit-->
+</br>
+Seletor de nth-of-type: Seleciona elementos de um determinado tipo com base em uma fórmula matemática que especifica sua posição em relação aos elementos irmãos do mesmo tipo. O seletor de nth-of-type é denotado por `:nth-of-type()`. Por exemplo, o seletor `p:nth-of-type(odd)` seleciona os elementos `<p>` que têm uma posição ímpar entre os elementos `<p>`.
+
+
+
+<div class="code-editor-container">
+  <textarea id="carrrp-input" class="code-input">
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS */
+        p:nth-of-type(2) {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <p>Primeiro parágrafo</p>
+    <p>Segundo parágrafo</p>
+    <p>Terceiro parágrafo</p>
+</body>
+</html>
+
+
+
+
+                            </textarea>
+  <button onclick="runCode('carrrp')" class="run-button">Click aqui para Executar</button>
+  <iframe id="carrrp-output" class="output-frame"></iframe>
+</div>
+
+
+
+
+
+ Seletor de nth-last-of-type: Seleciona elementos de um determinado tipo com base em uma fórmula matemática que especifica sua posição em relação aos elementos irmãos do mesmo tipo, contando a partir do último elemento. O seletor de nth-last-of-type é denotado por `:nth-last-of-type()`. Por exemplo, o seletor `p:nth-last-of-type(3)` seleciona o terceiro elemento `<p>` contando a partir do último elemento `<p>`.
+
+
+        <div class="code-editor-container">
+                 <textarea id="corjjjjp-input" class="code-input">
+
+
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+</ul>
+
+<style>
+li:nth-last-of-type(1) {
+  color: red;
+}
+</style>
+
+
+                            </textarea>
+                            <button onclick="runCode('corjjjjp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="corjjjjp-output" class="output-frame"></iframe>
+                            </div>
+              
+              
+
+
+<br>
+  <!--Tab to edit-->
+</br>
+
+ Seletor de notificação de foco: Seleciona elementos que têm o foco do teclado. O seletor de notificação de foco é denotado por `:focus-within`. Por exemplo, o seletor `form:focus-within` seleciona o formulário que está com foco ou qualquer elemento dentro dele que esteja com foco.
+ 
+ 
+         <div class="code-editor-container">
+                 <textarea id="corxxxp-input" class="code-input">
+
+<input type="text" class="notification-input" placeholder="Digite algo">
+<div class="notification">Notificação</div>
+
+<style>
+  .notification {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .notification-input:focus+.notification {
+    display: block;
+  }
+  
+</style>
+
+
+
+
+                            </textarea>
+                            <button onclick="runCode('corxxxp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="corxxxp-output" class="output-frame"></iframe>
+                            </div>
+              
+              
+ 
+ 
+ 
+<br>
+  <!--Tab to edit-->
+</br>
+ Seletor de estado de leitura: Seleciona elementos que já foram lidos por um leitor de tela ou outro dispositivo semelhante. O seletor de estado de leitura é denotado por `:read-only` e `:read-write`. Por exemplo, o seletor `input:read-only` seleciona os campos de entrada que são apenas de leitura.
+
+ <div class="code-editor-container">
+                 <textarea id="corpo-input" class="code-input">
+
+html
+<div class="container">
+  <input type="checkbox" id="toggle" class="toggle" />
+  <label for="toggle" class="toggle-label"></label>
+  <div class="content">
+    <h1>Título</h1>
+    <p>Conteúdo do elemento de leitura.</p>
+  </div>
+</div>
+
+css
+<style>
+  
+  .container {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .toggle {
+    display: none;
+  }
+  
+  .toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .content {
+    background-color: #f2f2f2;
+    padding: 20px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .toggle:checked+.toggle-label+.content {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
+</style>
+
+
+
+
+
+
+
+                            </textarea>
+                            <button onclick="runCode('corpo')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="corpo-output" class="output-frame"></iframe>
+                            </div>
+              
+        
+      
+      <button class="anterior">Aula Anterior</button>
+      <button class="proximo">Próxima Aula</button>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <section class="hidden">
+      <h2>Aula 8</h2>
+     <h3>
+        <!--Tab to edit-->
+        Selectores
+      </h3>
+      
+      <p>
+        <!--Tab to edit-->
+        
+        
+         Seletor de notificação de foco visível: Seleciona elementos que têm o foco do teclado e são visualmente distintos quando estão em foco. O seletor de notificação de foco visível é denotado por `:focus-visible`. Por exemplo, o seletor `button:focus-visible` seleciona os botões que estão em foco e têm uma indicação visual clara.
+         
+         
+         
+                 <div class="code-editor-container">
+                 <textarea id="ereuuy-input" class="code-input">
+
+<div class="container">
+  <input type="checkbox" id="toggle" class="toggle" />
+  <label for="toggle" class="toggle-label"></label>
+  <div class="notification">
+    <span class="notification-text">Nova notificação!</span>
+  </div>
+</div>
+
+
+
+<style>
+.container {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.toggle {
+  display: none;
+}
+
+.toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.notification {
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 10px;
+  display: none;
+}
+
+.toggle:checked+.toggle-label+.notification {
+  display: block;
+}
+ 
+ 
+ 
+</style>
+
+
+
+
+                            </textarea>
+                            <button onclick="runCode('ereuuy')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="ereuuy-output" class="output-frame"></iframe>
+                            </div>
+              
+              
+         
+         
+         
+         
+        
+        
+              
+        
+        
+        
+        
+        
+           
+              <br>
+                <!--Tab to edit-->
+              </br>
+           
+           
+           
+           
+        
+          Seletor de input obrigatório: Seleciona campos de entrada (input) que são obrigatórios e devem ser preenchidos. O seletor de input obrigatório é denotado por `:required`. Por exemplo, o seletor `input:required` seleciona os campos de entrada que são obrigatórios.
+        
+          <div class="code-editor-container">
+            <textarea id="inoppp-input" class="code-input">
+        <form>
+          <label for="name">Nome:</label>
+          <input type="text" id="name" required />
+        
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+        
+          <input type="submit" value="Enviar" />
+        </form>
+        
+        
+        
+        <style>
+          
+          input:required {
+            border: 2px solid red;
+          }
+          
+          input:required:invalid {
+            background-color: #ffeeee;
+          }
+          
+        </style>
+        
+        
+        
+        
+        
+        
+        
+                                    </textarea>
+                            <button onclick="runCode('inoppp')" class="run-button">Click aqui para Executar</button>
+                            <iframe id="inoppp-output" class="output-frame"></iframe>
+                            </div>
+              
+        
+        
+       
+      
+      
+      
+      <button class="anterior">Aula Anterior</button>
+      <button class="proximo">Próxima Aula</button>
+    </section>
+    
+    
+    <section class="hidden">
+      <h2>Aula 8</h2>
+    <h3>
+        <!--Tab to edit-->
+        Selectores
+      </h3>
+      <p>
+        <!--Tab to edit-->
+        
+        
+
+
+ Seletor de raiz: Seleciona o elemento raiz do documento, geralmente o elemento &lt;html&gt;. O seletor de raiz é denotado por `:root`. Por exemplo, o seletor `:root` seleciona o elemento raiz do documento.
+
+<div class="code-editor-container">
+  <textarea id="inokpp-input" class="code-input">
+<html>
+<head>
+  <style>
+    :root {
+      --cor-primaria: #007bff;
+      --cor-secundaria: #ff0000;
+    }
+
+    body {
+      background-color: var(--cor-primaria);
+      color: var(--cor-secundaria);
+    }
+  </style>
+</head>
+<body>
+  <h1>Título</h1>
+  <p>Conteúdo do documento.</p>
+</body>
+</html>                                    </textarea>
+                                    <button onclick="runCode('inokpp')" class="run-button">Click aqui para Executar</button>
+                                    <iframe id="inokpp-output" class="output-frame"></iframe>
+                                    </div>
+
+<br>
+  <!--Tab to edit-->
+</br>
+
+ Seletor de placeholder: Seleciona elementos de entrada (input) que possuem um texto de espaço reservado (placeholder). O seletor de placeholder é denotado por `::placeholder`. Por exemplo, o seletor `input::placeholder` seleciona campos de entrada que possuem um texto de espaço reservado.
+
+<div class="code-editor-container">
+  <textarea id="inoppk-input" class="code-input">
+
+<input type="text" placeholder="Digite seu nome" />
+
+<style>
+ input::placeholder {
+   color: #999999;
+   font-style: italic;
+ }
+</style>
+
+                                    </textarea>
+                                    <button onclick="runCode('inoppk')" class="run-button">Click aqui para Executar</button>
+                                    <iframe id="inoppk-output" class="output-frame"></iframe>
+                                    </div>
+<br>
+  <!--Tab to edit-->
+</br>
+ Seletor de visibilidade: Seleciona elementos que são visíveis no layout. O seletor de visibilidade é denotado por `:visible`. No entanto, é importante observar que esse seletor não existe nativamente no CSS. Ele é mencionado aqui apenas como um exemplo hipotético.
+
+<br>
+  <!--Tab to edit-->
+</br>
+
+O seletor universal (`*`) é um seletor CSS que seleciona todos os elementos em uma página HTML. Ele pode ser usado para aplicar estilos a todos os elementos, independentemente do tipo ou classe.<br>
+  <!--Tab to edit-->
+</br>
+
+Aqui está um exemplo de uso do seletor universal:
+
+<div class="code-editor-container">
+  <textarea id="inopop-input" class="code-input">
+<style>
+* {
+/* Estilos aplicados a todos os elementos */
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+background-color:#ffd215;
+}
+
+
+
+
+</style>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+  <h1>Título</h1>
+  <p>Parágrafo 1</p>
+  <p>Parágrafo 2</p>
+</body>
+</html>
+
+
+
+
+                                    </textarea>
+                                    <button onclick="runCode('inopop')" class="run-button">Click aqui para Executar</button>
+                                    <iframe id="inopop-output" class="output-frame"></iframe>
+                                    </div>
+
+
+Nesse exemplo, o seletor universal é usado para aplicar alguns estilos de reset básicos a todos os elementos. O `margin` e o `padding` são definidos como zero, o `box-sizing` é definido como `border-box` e a `font-family` é definida como Arial ou uma fonte genérica do tipo sans-serif.
+<br>
+  <!--Tab to edit-->
+</br>
+É importante ter cuidado ao usar o seletor universal, pois ele pode afetar todos os elementos em uma página, incluindo elementos aninhados e elementos de terceiros. Isso pode levar a efeitos colaterais indesejados ou a sobreposição de estilos.
+<br>
+  <!--Tab to edit-->
+</br>
+Em geral, é recomendado usar o seletor universal com moderação e combiná-lo com seletores mais específicos para estilizar elementos de forma mais controlada e granular.
+      </p>
+      <button class="anterior">Aula Anterior</button>
+      <button class="proximo">Próxima Aula</button>
+    </section>
+    
+
+      
+      
+    
+    
+    
+    
+    <section class="hidden">
+      <h2>Aula 8</h2>
+     <h3>
+        <!--Tab to edit-->
+        Cor 
+      </h3>
+      
+      <p>
+        <!--Tab to edit-->
+        Cores são elementos essenciais no design de páginas da web, e o CSS oferece várias maneiras de definir e aplicar cores aos elementos HTML. Existem diferentes sistemas de cores disponíveis, como palavras-chave, valores hexadecimais, valores RGB, valores HSL e muito mais. Aqui está uma explicação das diferentes formas de definir cores em CSS, juntamente com exemplos de uso em HTML e CSS:
+        
+       <h4>
+         <!--Tab to edit-->
+         Vejamos esse código 
+       </h4> 
+        <p>
+          <!--Tab to edit-->
+         <div class="code-editor-container">
+  <textarea id="inopopo-input" class="code-input">
+          
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    h1 {
+      color: blue;
+    }
+
+    p {
+      color: #ff0000;
+    }
+
+    .highlight {
+      color: green;
+    }
+
+    .bg-yellow {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>Título em azul</h1>
+  <p>Parágrafo em vermelho</p>
+  <p class="highlight">Parágrafo destacado em verde</p>
+  <div class="bg-yellow">
+    <p>Parágrafo com fundo amarelo</p>
+  </div>
+</body>
+</html>
+                                    </textarea>
+                                    <button onclick="runCode('inopopo')" class="run-button">Click aqui para Executar</button>
+                                    <iframe id="inopopo-output" class="output-frame"></iframe>
+                                    </div>
+
+Neste exemplo, temos um HTML básico com alguns elementos, como &lt;h1&gt;, &lt;p&gt; e uma &lt;div&gt;. O CSS é incorporado no cabeçalho do documento HTML usando a tag &lt;style&gt;.
+
+- O seletor `h1` seleciona todos os elementos &lt;h1&gt; e aplica a cor azul usando a propriedade `color`.
+- O seletor `p` seleciona todos os elementos &lt;p&gt; e aplica a cor vermelha usando o valor hexadecimal `#ff0000`.<br>
+  <!--Tab to edit-->
+</br>
+- O seletor `.highlight` seleciona todos os elementos com a classe `highlight` e aplica a cor verde.
+- O seletor `.bg-yellow` seleciona todos os elementos com a classe `bg-yellow` e aplica a cor de fundo amarela usando a propriedade `background-color`.
+<br>
+  <!--Tab to edit-->
+</br>
+Dessa forma, o &lt;h1&gt; terá texto em azul, os parágrafos normais terão texto em vermelho, o parágrafo com a classe `highlight` terá texto em verde e o parágrafo dentro da &lt;div&gt; com a classe `bg-yellow` terá um fundo amarelo.
+<br>
+  <!--Tab to edit-->
+</br>
+Você pode experimentar e ajustar as cores e estilos conforme necessário para atender às suas necessidades.
+          
+          
+        </p>
+        
+        
+        
+        
+        
+        <br>
+          <!--Tab to edit-->
+        </br>
+        
+        
+         Palavras-chave:
+        As palavras-chave são nomes predefinidos para cores comuns. Alguns exemplos incluem "red" (vermelho), "blue" (azul), "green" (verde) e assim por diante.
+        <br>
+          <!--Tab to edit-->
+        </br>
+        Exemplo
+        <div class="code-editor-container">
+        <textarea id="inopgp-input" class="code-input">
+       
+        <h1 class="red-text">Texto vermelho</h1>
+        
+        <style>
+        
+        .red-text {
+        color: red;
+        }
+
+                     </style>                       </textarea>
+                                            <button onclick="runCode('inopgp')" class="run-button">Click aqui para Executar</button>
+                                            <iframe id="inopgp-output" class="output-frame"></iframe>
+                                            </div>
+        <br>
+          <!--Tab to edit-->
+        </br>
+         Valores hexadecimais:
+        Os valores hexadecimais são representações de cores usando uma combinação de números e letras. Eles começam com o caractere "#" seguido por seis dígitos hexadecimais, onde cada par de dígitos representa a intensidade de vermelho, verde e azul (RGB).
+        
+       
+                 <div class="code-editor-container">
+                   <textarea id="i1-input" class="code-input">
+        
+        <p class="purple-text">Texto roxo</p>
+        
+        
+       <style>
+        .purple-text {
+        color: #800080;
+        }
+      </style>
+                                            </textarea>
+                                            <button onclick="runCode('i1')" class="run-button">Click aqui para Executar</button>
+                                            <iframe id="i1-output" class="output-frame"></iframe>
+                                            </div>
+                                            
+                                              <br>
+                                                <!--Tab to edit-->
+                                              </br>
+                                            
+         Valores RGB:
+        Os valores RGB representam cores usando intensidades de vermelho, verde e azul em uma escala de 0 a 255. Eles são especificados usando a função `rgb()`.
+        
+                 <div class="code-editor-container">
+                   <textarea id="i2-input" class="code-input">
+        
+        
+        
+        
+        <div class="teal-box"></div>
+        
+        
+        
+        
+        <style>
+        .teal-box {
+        background-color: rgb(0, 128, 128);
+        width: 200px;
+        height: 200px;
+        }
+        </style>                                 </textarea>
+                                            <button onclick="runCode('i2')" class="run-button">Click aqui para Executar</button>
+                                            <iframe id="i2-output" class="output-frame"></iframe>
+                                            </div>
+        <br>
+          <!--Tab to edit-->
+        </br>
+        Valores HSL:
+        Os valores HSL representam cores usando matiz (H), saturação (S) e luminosidade (L). A matiz é um valor de ângulo de 0 a 360, a saturação é um valor percentual de 0% a 100%, e a luminosidade é um valor percentual de 0% a 100%. Eles são especificados usando a função `hsl()`.
+        
+              <div class="code-editor-container">
+                <textarea id="i3-input" class="code-input">
+        <span class="gold-text">Texto dourado</span>
+        ```
+        
+       <style>
+        .gold-text {
+        color: hsl(45, 100%, 50%);
+        }
+            </style>                          </textarea>
+                                            <button onclick="runCode('i3')" class="run-button">Click aqui para Executar</button>
+                                            <iframe id="i3-output" class="output-frame"></iframe>
+                                            </div>
+        
+        Estes são apenas alguns exemplos de como definir e aplicar cores usando CSS em combinação com HTML. Existem várias outras formas e propriedades para estilizar as cores em elementos HTML, como gradientes, transparência e muito mais. A escolha do sistema de cores e sua aplicação dependem das necessidades e preferências do projeto.
+        
+      </p>
+      
+      
+      
+      
+      
+      <button class="anterior">Aula Anterior</button>
+      <button class="proximo">Próxima Aula</button>
+    </section>
+    
+    <section class="hidden">
+      <h2>Aula 8</h2>
+      <h3>
+        <!--Tab to edit-->
+        Cores
+      </h3>
+      <p>
+      
+       Transparência:
+      Você pode controlar a transparência de uma cor usando o valor alfa (opacity). O valor alfa varia de 0 a 1, sendo 0 totalmente transparente e 1 totalmente opaco. Isso permite que você crie elementos com cores semi-transparentes.
+      
+      Exemplo:
+              <div class="code-editor-container">
+                <textarea id="i4p-input" class="code-input">
+      
+      <div class="transparent-box"></div>
+     
+      
+     <style>
+      .transparent-box {
+      background-color: rgba(255, 0, 0, 0.5); /* Vermelho com 50% de transparência */
+      width: 200px;
+      height: 200px;
+      }
+              
+              </style>                    </textarea>
+                                          <button onclick="runCode('i4p')" class="run-button">Click aqui para Executar</button>
+                                          <iframe id="i4p-output" class="output-frame"></iframe>
+                                          </div>
+      
+       Valores RGBA:
+      Valores RGBA são semelhantes aos valores RGB, mas incluem um canal alfa para controlar a transparência. O canal alfa é especificado como um valor entre 0 e 1.
+      
+      Exemplo:
+              <div class="code-editor-container">
+                <textarea id="i8opo-input" class="code-input">
+      <span class="rgba-text">Texto com transparência</span>
+     <style>
+      .rgba-text {
+      color: rgba(0, 128, 0, 0.8); /* Verde com 80% de opacidade */
+      }
+      </style>
+                                          </textarea>
+                                          <button onclick="runCode('i8opo')" class="run-button">Click aqui para Executar</button>
+                                          <iframe id="i8opo-output" class="output-frame"></iframe>
+                                          </div>
+                                          
+                                          <br>
+                                            <!--Tab to edit-->
+                                          </br>
+      Gradientes:
+      Os gradientes permitem que você crie transições suaves de cor em elementos. Existem dois tipos principais de gradientes: linear e radial. Você pode definir a direção, as cores de parada e os pontos de parada para criar gradientes personalizados.
+      
+      Exemplo:
+              <div class="code-editor-container">
+                <textarea id="i66-input" class="code-input">
+      <div class="gradient-box"></div>
+     
+      
+     <style>
+      .gradient-box {
+      background: linear-gradient(to right, yellow, red); /* Gradiente linear de amarelo a vermelho */
+      width: 200px;
+      height: 200px;
+      }
+    </style>                                 </textarea>
+                                          <button onclick="runCode('i66')" class="run-button">Click aqui para Executar</button>
+                                          <iframe id="i66-output" class="output-frame"></iframe>
+                                          </div>
+      <br>
+        <!--Tab to edit-->
+      </br>
+       Nomes de cores estendidos:
+      Além das palavras-chave básicas, CSS também suporta uma lista de nomes de cores estendidos. Esses nomes são mais descritivos e oferecem uma variedade de opções de cores.
+      
+      Exemplo:
+              <div class="code-editor-container">
+                <textarea id="i20-input" class="code-input">
+      <h1 class="deeppink-text">Texto rosa intenso</h1>
+      
+      
+     <style>
+      .deeppink-text {
+      color: deeppink;
+      }
+     </style>
+                                          </textarea>
+                                          <button onclick="runCode('i20')" class="run-button">Click aqui para Executar</button>
+                                          <iframe id="i20-output" class="output-frame"></iframe>
+                                          </div>
+                                          <br>
+                                            <!--Tab to edit-->
+                                          </br>
+      </p>
+      <button class="anterior">Aula Anterior</button>
+      <button class="proximo">Próxima Aula</button>
+    </section>
+    
+    
+    <section class="hidden">
+      <h2>Aula 8</h2>
+      
+      <h3>
+        <!--Tab to edit-->
+        Cor de fundo 
+      </h3>
+      
+      <p>Em CSS, você pode definir a cor de fundo de um elemento usando a propriedade `background-color`. Existem várias formas de especificar a cor de fundo, incluindo palavras-chave, valores hexadecimais, valores RGB, valores HSL e até mesmo imagens. Aqui estão exemplos de cada método:
+      <br>
+        <!--Tab to edit-->
+      </br>
+      1. Palavras-chave:
+      Você pode usar palavras-chave predefinidas para definir a cor de fundo. Algumas palavras-chave comuns são "red" (vermelho), "blue" (azul), "green" (verde), "yellow" (amarelo), entre outras.
+      
+      Exemplo:
+         <div class="code-editor-container">
+           <textarea id="i21-input" class="code-input">
+     <html>
+<head>
+         <style>
+            body{
+              background-color:verde;
+            }
+          </style>
+          
+        </head>
+        
+        <body>
+          <!--Tab to edit-->
+          
+          
+          <p>
+            <!--Tab to edit-->
+            Corpo de pagina; com cor verde 
+          </p>
+        </body>
+        
+        
+        
+        
+        
+        
+      </html>
+      
+                                       </textarea>
+                                          <button onclick="runCode('i21')" class="run-button">Click aqui para Executar</button>
+                                          <iframe id="i21-output" class="output-frame"></iframe>
+                                          </div>
+                                          <br>
+                                            <!--Tab to edit-->
+                                          </br>
+       Valores hexadecimais:
+      Os valores hexadecimais são representações de cores usando uma combinação de números e letras. Eles começam com o caractere "#" seguido por seis dígitos hexadecimais, onde cada par de dígitos representa a intensidade de vermelho, verde e azul (RGB).
+         <div class="code-editor-container">
+           <textarea id="i24-input" class="code-input">
+      Exemplo:
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    div {
+      background-color: #0F0; /* Verde */
+    }
+  </style>
+</head>
+<body>
+  <div>Conteúdo</div>
+</body>
+</html>                           </textarea>
+                                          <button onclick="runCode('i24')" class="run-button">Click aqui para Executar</button>
+                                          <iframe id="i24-output" class="output-frame"></iframe>
+                                          </div>
+                                          <br>
+                                            <!--Tab to edit-->
+                                          </br>
+       Valores RGB:
+      Os valores RGB representam cores usando intensidades de vermelho, verde e azul em uma escala de 0 a 255. Eles são especificados usando a função `rgb()`.
+      
+      Exemplo:
+               <div class="code-editor-container">
+                 <textarea id="i54-input" class="code-input">
+      
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    div {
+      background-color: rgb(255, 0, 0); /* Vermelho */
+    }
+  </style>
+</head>
+<body>
+  <div>Conteúdo</div>
+</body>
+</html>
+                                          </textarea>
+                                          <button onclick="runCode('i54')" class="run-button">Click aqui para Executar</button>
+                                          <iframe id="i54-output" class="output-frame"></iframe>
+                                          </div>
+                                          <br>
+                                            <!--Tab to edit-->
+                                          </br>
+       Valores HSL:
+      Os valores HSL representam cores usando matiz (H), saturação (S) e luminosidade (L). A matiz é um valor de ângulo de 0 a 360, a saturação é um valor percentual de 0% a 100% e a luminosidade é um valor percentual de 0% a 100%. Eles são especificados usando a função `hsl()`.
+      
+      Exemplo:
+       <div class="code-editor-container">
+         <textarea id="i94-input" class="code-input">
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    div {
+      background-color: hsl(0, 100%, 50%); /* Vermelho */
+    }
+  </style>
+</head>
+<body>
+  <div>Conteúdo</div>
+</body>
+</html>                             </textarea>
+                                          <button onclick="runCode('i94')" class="run-button">Click aqui para Executar</button>
+                                          <iframe id="i94-output" class="output-frame"></iframe>
+                                          </div>
+      
+      Imagens:
+      Você também pode definir uma imagem como fundo usando a propriedade `background-image`. Você precisa especificar o caminho da imagem usando uma URL.
+      
+      Exemplo:
+      
+     <div>
+      div {
+      background-image: url("caminho/para/imagem.jpg");
+      }
+      </div>
+      <p>
+        <!--Tab to edit-->
+        exemplo prático :
+      </p>
+      <div class="code-editor-container">
+        <textarea id="i188-input" class="code-input">
+      <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url("IMAGEM/icon.png");
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <h1>Título</h1>
+  <p>Conteúdo do site</p>
+</body>
+</html>
+                                          </textarea>
+                                          <button onclick="runCode('i188')" class="run-button">Click aqui para Executar</button>
+                                          <iframe id="i188-output" class="output-frame"></iframe>
+                                          </div>
+      </p>
+      <button class="anterior">Aula Anterior</button>
+      <button class="proximo">Próxima Aula</button>
+    </section>
+    
+    
+    
+    
+    
+    
+    <section class="hidden">
+      <h2>Aula 8</h2>
+      <p>Rótulos</p>
+      <button class="anterior">Aula Anterior</button>
+      <button class="proximo">Próxima Aula</button>
+    </section>
+    
+    
+    <section class="hidden">
+      <h2>Aula 8</h2>
+     <h3>
+        <!--Tab to edit-->
+        Opacidade
+      </h3>
+      
+      
+      
+      <p>
+        <!--Tab to edit-->
+       
+        Opacidade refere-se à propriedade de um objeto ou elemento gráfico de ser transparente ou opaco. Em CSS, a opacidade é controlada pela propriedade `opacity`, que aceita valores de 0 a 1, sendo 0 totalmente transparente e 1 totalmente opaco. Portanto, definir a opacidade de um elemento para 0.5 significa que ele estará 50% transparente.
+        <br>
+          <!--Tab to edit-->
+        </br>
+        A notação RGBA (Red, Green, Blue, Alpha) é uma extensão da notação RGB para representar cores com transparência. Enquanto a notação RGB usa três valores (de 0 a 255) para especificar a intensidade de vermelho, verde e azul de uma cor, a notação RGBA adiciona um quarto valor (de 0 a 1) para representar a opacidade.
+        <br>
+          <!--Tab to edit-->
+        </br>
+        Na notação RGBA, os três primeiros valores representam a intensidade de vermelho, verde e azul, respectivamente, variando de 0 a 255 ou de 0% a 100%. O quarto valor, chamado de canal alfa, representa a opacidade e varia de 0 a 1, onde 0 é totalmente transparente e 1 é totalmente opaco.
+        <br>
+          <!--Tab to edit-->
+        </br>
+        Portanto, ao definir uma cor usando a notação RGBA, você pode controlar a opacidade adicionando um valor de 0 a 1 após os valores de vermelho, verde e azul.
+        <br>
+          <!--Tab to edit-->
+        </br>
+        Espero que isso esclareça a definição de opacidade e a notação RGBA. Se você tiver mais dúvidas, fique à vontade para perguntar.
+        
+        <br>
+          <!--Tab to edit-->
+        </br>Para definir a opacidade de um elemento usando a propriedade `opacity` em CSS, você pode seguir o exemplo abaixo:
+
+ <div class="code-editor-container">
+   <textarea id="i18u8-input" class="code-input">
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .transparent-box {
+      opacity: 0.5; /* Opacidade de 50% */
+    }
+  </style>
+</head>
+<body>
+  <div class="transparent-box">
+    <h1>Título</h1>
+    <p>Conteúdo</p>
+  </div>
+</body>
+</html
+
+                                          </textarea>
+                                          <button onclick="runCode('i18u8')" class="run-button">Click aqui para Executar</button>
+                                          <iframe id="i18u8-output" class="output-frame"></iframe>
+                                          </div>
+                                          <br>
+                                            <!--Tab to edit-->
+                                          </br>
+Neste exemplo, a classe `.transparent-box` é usada para selecionar o elemento &lt;div&gt; que desejamos tornar transparente. Em seguida, a propriedade CSS `opacity` é definida como `0.5`, o que significa que o elemento será exibido com 50% de opacidade.
+<br>
+  <!--Tab to edit-->
+</br>
+Você pode ajustar o valor da propriedade `opacity` para controlar a opacidade desejada, variando de 0 (totalmente transparente) a 1 (totalmente opaco). Valores intermediários, como 0.5, fornecerão um efeito de transparência proporcional.
+<br>
+  <!--Tab to edit-->
+</br>
+Lembre-se de que a propriedade `opacity` afeta não apenas o conteúdo do elemento, mas também todos os elementos filhos. Ou seja, se você definir a opacidade de um elemento pai, ela será aplicada a todos os elementos filhos dentro dele.
+<br>
+  <!--Tab to edit-->
+</br>
+ A equipa CodeATOES 
+Espera que isso ajude! Se você tiver mais dúvidas, fique à vontade para perguntar o tutor.
+      </p>
+      
+      <p>
+        <!--Tab to edit-->
+        Vamos fornecer um exemplo prático de como usar a propriedade `opacity` em CSS para criar um efeito de fade-in e fade-out em um elemento quando o mouse passa sobre ele.
+
+ <div class="code-editor-container">
+   <textarea id="i18i8-input" class="code-input">
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .fade-element {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    .fade-element:hover {
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="fade-element"></div>
+</body>
+</html>
+                                          </textarea>
+                                          <button onclick="runCode('i18i8')" class="run-button">Click aqui para Executar</button>
+                                          <iframe id="i18i8-output" class="output-frame"></iframe>
+                                          </div>
+<br>
+  <!--Tab to edit-->
+</br>
+Neste exemplo, estamos criando um elemento &lt;div&gt; com a classe `.fade-element`. Estamos definindo um tamanho (`width` e `height`) e uma cor de fundo (`background-color`) para o elemento. Inicialmente, definimos a opacidade (`opacity`) como 1 para torná-lo totalmente opaco.
+<br>
+  <!--Tab to edit-->
+</br>
+Em seguida, adicionamos uma transição (`transition`) na propriedade `opacity` com uma duração de 0,3 segundos e uma função de timing (`ease`). Isso fará com que a mudança de opacidade ocorra suavemente ao longo do tempo.
+<br>
+  <!--Tab to edit-->
+</br>
+Em seguida, usamos a pseudo-classe `:hover` para aplicar um novo valor de opacidade (`opacity: 0.5`) quando o mouse passa sobre o elemento. Isso criará o efeito de fade-out quando o mouse estiver sobre o elemento.
+<br>
+  <!--Tab to edit-->
+</br>
+Ao mover o mouse para fora do elemento, a transição definida fará com que a opacidade volte ao valor original de 1, criando o efeito de fade-in.
+<br>
+  <!--Tab to edit-->
+</br>
+Você pode experimentar esse exemplo em seu navegador para ver o efeito de fade-in e fade-out quando o mouse passa sobre o elemento.
+<br>
+  <!--Tab to edit-->
+</br>
+Espero que isso ajude a ilustrar o uso prático da propriedade `opacity` em CSS! Se você tiver mais perguntas, fique à vontade para perguntar.
+      </p>
+      
+      
+      
+      <button class="anterior">Aula Anterior</button>
+      <button class="proximo">Próxima Aula</button>
+    </section>
+    
+    
+    <section class="hidden">
+      <h2>Aula 8</h2>
+     <h3>
+        <!--Tab to edit-->
+        hsl, HSLA
+      </h3>
+      
+      
+      
+      <p>
+        <!--Tab to edit-->
+        
+        <br>
+          <!--Tab to edit-->
+        </br>
+        HSL (Matiz, Saturação, Luminosidade):
+        - Matiz (Hue): Representa a cor em um círculo cromático. O valor varia de 0 a 360, onde 0 e 360 correspondem ao vermelho, 120 ao verde e 240 ao azul. Os outros valores entre 0 e 360 representam cores intermediárias.
+        - Saturação (Saturation): Controla a intensidade da cor. O valor varia de 0% a 100%, onde 0% significa sem saturação (tons de cinza) e 100% corresponde à saturação máxima.
+        - Luminosidade (Lightness): Determina o brilho da cor. O valor varia de 0% a 100%, onde 0% é preto e 100% é branco.
+        <br>
+          <!--Tab to edit-->
+        </br>
+        HSLA (Matiz, Saturação, Luminosidade, Alfa):
+        - Alfa (Alpha): É um valor opcional que controla a transparência da cor. O valor varia de 0 a 1, onde 0 significa totalmente transparente e 1 corresponde à opacidade total. Com o valor de alfa, você pode controlar a opacidade da cor e permitir que o conteúdo subjacente seja visível através dela.
+        <br>
+          <!--Tab to edit-->
+        </br>
+        Ao usar a notação HSL ou HSLA em CSS, você pode especificar cores de forma mais intuitiva e ter controle sobre a matiz, saturação, luminosidade e transparência de uma cor.
+        <br>
+          <!--Tab to edit-->
+        </br>
+        Aqui estão alguns exemplos de notação HSL e HSLA:
+        - `hsl(0, 100%, 50%)`: Vermelho puro, com saturação máxima e luminosidade de 50%.
+        - `hsl(120, 50%, 75%)`: Verde com saturação de 50% e luminosidade de 75%.
+        - `hsla(240, 100%, 50%, 0.5)`: Azul com saturação máxima e luminosidade de 50%, com transparência de 50%.
+        <br>
+          <!--Tab to edit-->
+        </br>
+        Essas notações fornecem uma maneira flexível e expressiva de especificar cores em CSS, permitindo que você ajuste a matiz, saturação, luminosidade e transparência para alcançar os efeitos visuais desejados.
+        <br>
+          <!--Tab to edit-->
+        </br>
+        Espero que isso esclareça a definição das notações HSL e HSLA! Se você tiver mais dúvidas, estou aqui para ajudar.
+        
+        
+        <br>
+          <!--Tab to edit-->
+        </br>
+        
+        
+        Abaixo está um exemplo prático de como usar a notação HSL (Hue, Saturation, Lightness) e HSLA (Hue, Saturation, Lightness, Alpha) em CSS para definir cores. 
+ <div class="code-editor-container">
+   <textarea id="i18l8-input" class="code-input">
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .color-box {
+      width: 200px;
+      height: 200px;
+      background-color: hsl(120, 100%, 50%); /* Cor verde com saturação máxima */
+    }
+    
+    .color-box-transparent {
+      background-color: hsla(240, 100%, 50%, 0.5); /* Cor azul com transparência de 50% */
+    }
+  </style>
+</head>
+<body>
+  <div class="color-box"></div>
+  <div class="color-box color-box-transparent"></div>
+</body>
+</html>
+                                          </textarea>
+                                          <button onclick="runCode('i18l8')" class="run-button">Click aqui para Executar</button>
+                                          <iframe id="i18l8-output" class="output-frame"></iframe>
+                                          </div> 
+<br>
+  <!--Tab to edit-->
+</br>
+Neste exemplo, temos dois elementos &lt;div&gt; com a classe `.color-box`. O primeiro elemento tem uma cor de fundo definida usando a notação HSL: `hsl(120, 100%, 50%)`. Essa notação especifica um valor de matiz (hue) de 120, que corresponde à cor verde, uma saturação (saturation) de 100% (saturação máxima) e uma luminosidade (lightness) de 50% (meio termo entre claro e escuro). Isso cria um quadrado verde.
+<br>
+  <!--Tab to edit-->
+</br>
+O segundo elemento &lt;div&gt; tem a classe `.color-box-transparent`. Nele, usamos a notação HSLA: `hsla(240, 100%, 50%, 0.5)`. Os três primeiros valores são os mesmos da notação HSL, o último valor (alfa/alpha) é adicionado para controlar a transparência da cor. Neste caso, estamos especificando um valor de alfa de 0.5, o que resulta em uma transparência de 50%. Isso cria um quadrado azul semi-transparente.
+<br>
+  <!--Tab to edit-->
+</br>
+Você pode experimentar esse exemplo em seu navegador para ver os dois elementos &lt;div&gt; com cores definidas por meio da notação HSL e HSLA.
+<br>
+  <!--Tab to edit-->
+</br>
+Lembre-se de que o valor de matiz (hue) varia de 0 a 360, representando as diferentes cores em um círculo cromático. A saturação (saturation) varia de 0% a 100%, onde 0% é sem saturação (tons de cinza) e 100% é a saturação máxima. A luminosidade (lightness) também varia de 0% a 100%, onde 0% é preto e 100% é branco.
+
+
+        
+        
+        
+        
+        
+      </p>
+      <button class="anterior">Aula Anterior</button>
+      <button class="proximo">Próxima Aula</button>
+    </section>
+    
+    
+    
+    <section class="hidden">
+      <h2>Aula 8</h2>
+      <p>Rótulos</p>
+      <button class="anterior">Aula Anterior</button>
+      <button class="proximo">Próxima Aula</button>
+    </section>
+    
+    
+    
+    <section class="hidden">
+      <h2>Aula 8</h2>
+      <p>Rótulos</p>
+      <button class="anterior">Aula Anterior</button>
+      <button class="proximo">Próxima Aula</button>
+    </section>
+    
+    
+    
+    <section class="hidden">
+      <h2>Aula 8</h2>
+      <p>Rótulos</p>
+      <button class="anterior">Aula Anterior</button>
+      <button class="proximo">Próxima Aula</button>
+    </section>
+    
+    
+    
+    
+    <section class="hidden">
+      <h2>Aula 8</h2>
+      <p>Rótulos</p>
+      <button class="anterior">Aula Anterior</button>
+      <button class="proximo">Próxima Aula</button>
+    </section>
+    
+    
+    
+    
+    <section class="hidden">
+      <h2>Aula 8</h2>
+      <p>Rótulos</p>
+      <button class="anterior">Aula Anterior</button>
+      <button class="proximo">Próxima Aula</button>
+    </section>
+    
+          
+          
+          
+          <script src="Script.js"></script>
+</body>
+
+</html>
