@@ -1,34 +1,29 @@
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-  event.preventDefault();
+const loginForm = document.getElementById('loginForm');
+const errorMessage = document.getElementById('errorMessage');
 
-  var email = document.getElementById("emailInput").value;
-  var password = document.getElementById("passwordInput").value;
+// Array com os e-mails e códigos
+const users = [
+    { email: 'user1@example.com', code: '12345' },
+    { email: 'user2@example.com', code: '54321' },
+    // Adicione mais usuários aqui
+];
 
-  // Verifique se as credenciais são válidas (email e senha estão corretos)
-  var credentialsValid = checkCredentials(email, password);
-  
-  if (credentialsValid) {
-    // Se as credenciais são válidas, redirecione para a página principal
-    window.location.href = "pagina_principal.html";
-  } else {
-    // Se as credenciais não são válidas, mostre uma mensagem de erro
-    document.getElementById("errorMessage").classList.remove("hidden");
-  }
-});
+loginForm.addEventListener('submit', function(event) {
+    event.preventDefault();
 
-function checkCredentials(email, password) {
-  // Aqui você pode adicionar a lógica para verificar se as credenciais são válidas
-  // Você pode armazenar os 20 emails e códigos em arrays e comparar com os dados fornecidos
-  // Vou fornecer um exemplo simples:
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password');
+    const email = emailInput.value;
+    const code = passwordInput.value;
 
-  var storedEmails = ["email1@example.com", "email2@example.com", ...];
-  var storedPasswords = ["password1", "password2", ...];
+    const user = users.find(user => user.email === email && user.code === code);
 
-  for (var i = 0; i < storedEmails.length; i++) {
-    if (email === storedEmails[i] && password === storedPasswords[i]) {
-      return true; // Credenciais válidas
+    if (user) {
+        // Login bem sucedido, redirecionar para a página principal
+        window.location.href = 'pagina_principal.html';
+    } else {
+        // Login inválido, exibir mensagem de erro
+        errorMessage.textContent = 'E-mail ou código inválido';
+        errorMessage.style.color = 'red';
     }
-  }
-
-  return false; // Credenciais inválidas
-}
+});
