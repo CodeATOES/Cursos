@@ -2,111 +2,24 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CURSOS COMPLETOS DE PROGRAMAÃÃO</title>
-  <style>
-    body {
-      background: #fff;
-      text-align: center;
-      justify-content: center;
-      justify-items: center;
-    }
-
-    .d {
-      background-color: orange;
-      padding: 12px;
-      margin: 10px;
-      min-height: 400px;
-      border: none;
-      border-radius: 10px;
-    }
-
-    input {
-      padding: 12px;
-      margin: 10px;
-      border: none;
-    }
-
-    button {
-      width: 40%;
-      height: 50px;
-      border-radius: 20px;
-      border: none;
-    }
-
-    .u1 {
-      color: #fff;
-      background: orange;
-      border-radius: 15px 0 15px 0;
-    }
-
-    .u2 {
-      font-family: cursive;
-      font-size: 60px;
-      underline: 10px; /* Corrigido de "Underline" para "underline" */
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    p {
-      padding: 0;
-    }
-
-    .u3 {
-      font-size: 80px;
-    }
-
-    .divider {
-      display: flex;
-      align-items: center;
-    }
-
-    .line {
-      flex-grow: 1;
-      border-top: 1px solid #000;
-    }
-
-    .or {
-      padding: 0 10px;
-    }
-  </style>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="dark">
-    <h1><span class="u1">Code</span>ATOES</h1>
-  </div>
-  <div class="d">
-    <h2><span class="u2">L</span>ogin</h2>
-
-    
-      
-  
-  <form id="loginForm">
-    <input type="email" id="emailInput" placeholder="Email" required>
-    <input type="password" id="passwordInput" placeholder="Senha" required>
-    <button type="submit">Entrar</button>
-  </form>
-
-  <div id="errorMessage" class="hidden">Credenciais inválidas!</div>
-
-  <script src="script.js"></script>
-
-
-    <p>Esqueci meu <a href="#">cÃ³digo</a></p>
-
-    <div class="divider">
-      <div class="line"></div>
-      <div class="or">ou</div>
-      <div class="line"></div>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="password" id="password" placeholder="Código" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="errorMessage"></p>
     </div>
 
-    <p>Requisitar <a href="#">credenciais</a></p>
-  </div>
+    <script src="login.js"></script>
 </body>
 
 </html>
