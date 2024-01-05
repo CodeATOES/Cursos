@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  
-    <meta charset="utf-8">
-      <title>CURSOS COMPLETOS DE PROGRAMAÇÃO </title>
+  <title>CURSOS COMPLETOS DE PROGRAMAÃÃO</title>
+  <style>
+    /* Seu estilo aqui... */
     
-    <style>
-        Body{
+    Body{
             Background:#fff;
             Text-align:center;
             Justify-content:center;
@@ -74,54 +72,58 @@
     }
     </style>
     
-    <script src="login.js"></script>
-  </head>
-  <body>
-    
+  </style>
+  <script src="login.js"></script>
+</head>
 
-          <div class="dark">
-            <h1><span class="u1">Code</span>ATOES</h1></div>
-            <div class="d">
-            <h2>
-              <!--Tab to edit-->
-              <span class="u2">L</span>ogin
-            </h2>
-            
-    <form id="loginForm" onsubmit="return enviarFormulario()">
-        <label for="emailInput">Email:</label>
-        <input type="email" id="emailInput" placeholder="Seu email" required><br>
+<body>
+  <div class="dark">
+    <h1><span class="u1">Code</span>ATOES</h1>
+  </div>
+  <div class="d">
+    <h2>
+      <span class="u2">L</span>ogin
+    </h2>
 
-        <label for="passwordInput">Senha:</label>
-        <input type="password" id="passwordInput" placeholder="Sua senha" required><br>
+    <form id="loginForm" onsubmit="enviarFormulario()">
+      <label for="emailInput">Email:</label>
+      <input type="email" id="emailInput" placeholder="Seu email" required><br>
 
-        <input type="submit" value="Entrar">
+      <label for="passwordInput">Senha:</label>
+      <input type="password" id="passwordInput" placeholder="Sua senha" required><br>
+
+      <input type="submit" value="Entrar">
     </form>
 
     <script>
-        function enviarFormulario() {
-            var email = document.getElementById("emailInput").value;
-            var senha = document.getElementById("passwordInput").value;
+      function enviarFormulario() {
+        var email = document.getElementById("emailInput").value;
+        var senha = document.getElementById("passwordInput").value;
 
-            // Aqui você pode realizar ações com os dados, como enviá-los para login.js
-            console.log("Email: " + email);
-            console.log("Senha: " + senha);
+        // Enviar os dados para login.js
+        loginJSFunction(email, senha);
 
-            // Impede o envio padrão do formulário
-            return false;
-	}
-			
+        // Impede o envio padrÃ£o do formulÃ¡rio
+        return false;
+      }
+
+      function loginJSFunction(email, senha) {
+        // Aqui vocÃª pode realizar aÃ§Ãµes no arquivo login.js com os dados
+        console.log("Email enviado para login.js: " + email);
+        console.log("Senha enviada para login.js: " + senha);
+      }
     </script>
-					</br>
-					<p>Esqueci meu <a href="#">código</a></p>
-					
-			<div class="divider">
-  <div class="line"></div>
-  <div class="or">ou</div>
-  <div class="line"></div>
-</div>
 
-					<p>Requisitar <a href="#">credenciais</a></p>
-					</div>
+    <p>Esqueci meu <a href="#">cÃ³digo</a></p>
+
+    <div class="divider">
+      <div class="line"></div>
+      <div class="or">ou</div>
+      <div class="line"></div>
+    </div>
+
+    <p>Requisitar <a href="#">credenciais</a></p>
+  </div>
 </body>
 
-</html>
+			   </html>
