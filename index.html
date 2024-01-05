@@ -73,7 +73,7 @@
       padding: 0 10px;
     }
   </style>
-  <script src="login.js"></script>
+  
 </head>
 
 <body>
@@ -83,34 +83,19 @@
   <div class="d">
     <h2><span class="u2">L</span>ogin</h2>
 
-    <form id="loginForm" action="login.js">
-      <label for="emailInput">Email:</label>
-      <input type="email" id="emailInput" placeholder="Seu email" required><br>
+    
+      
+  
+  <form id="loginForm">
+    <input type="email" id="emailInput" placeholder="Email" required>
+    <input type="password" id="passwordInput" placeholder="Senha" required>
+    <button type="submit">Entrar</button>
+  </form>
 
-      <label for="passwordInput">Senha:</label>
-      <input type="password" id="passwordInput" placeholder="Sua senha" required><br>
+  <div id="errorMessage" class="hidden">Credenciais inválidas!</div>
 
-      <input type="submit" value="Entrar">
-    </form>
+  <script src="script.js"></script>
 
-    <script>
-      function enviarFormulario() {
-        var email = document.getElementById("emailInput").value;
-        var senha = document.getElementById("passwordInput").value;
-
-        // Enviar os dados para login.js
-        loginJSFunction(email, senha);
-
-        // Impede o envio padrÃ£o do formulÃ¡rio
-        return false;
-      }
-
-      function loginJSFunction(email, senha) {
-        // Aqui vocÃª pode realizar aÃ§Ãµes no arquivo login.js com os dados
-        console.log("Email enviado para login.js: " + email);
-        console.log("Senha enviada para login.js: " + senha);
-      }
-    </script>
 
     <p>Esqueci meu <a href="#">cÃ³digo</a></p>
 
