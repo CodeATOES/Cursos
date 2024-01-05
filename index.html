@@ -1,25 +1,119 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Login</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="login.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+    <meta charset="utf-8">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Alexandre ">
+    <title>CURSOS COMPLETOS DE PROGRAMAÇÃO </title>
+    
     <style>
         Body{
+            Background:#fff;
             Text-align:center;
-            Padding:10px;
-            Margin: 20px;
-        } 
+            Justify-content:center;
+            Justify-items:center;
+            
+        }
+       .d{
+            Background-color:orange;
+            Padding:12px;
+            Margin:10px;
+            Min-height:400px;
+            Border:none;
+            Border-radius:10px;
+        }
+        Input{
+            
+            Padding:12px;
+            Margin:10px;
+            Border:none;
+        }
+        Button{
+            Width:40%;
+            Height:50px;
+            Border-radius:20px;
+            Border:none;
+        }
+       .u1{
+            Color:#fff;
+            Background:orange;
+            Border-radius:15px 0 15px 0;
+            
+        }
+       .u2{
+            font-family:cursive;
+            Font-size:60px;
+            Underline:10px;
+        }
+        a{
+        Text-decoration:none;
+       } 
+       P{
+           Padding:0;
+       }
+       }
+      .u3{
+          Font-size:80px
+      }
+      
+    .divider {
+      display: flex;
+      align-items: center;
+    }
+
+    .line {
+      flex-grow: 1;
+      border-top: 1px solid #000;
+    }
+
+    .or {
+      padding: 0 10px;
+    }
     </style>
-</head>
-<body>
-    <h1>... </h1>
-    <form id="loginForm">
-        <input type="email" id="emailInput" placeholder="Email" required><br>
-        <input type="password" id="passwordInput" placeholder="Senha" required><br>
-        <input type="submit" value="Entrar">
-    </form>
-    <div id="message"></div>
+    
+    
+  </head>
+  <body>
+    
+
+          <div class="dark">
+            <h1><span class="u1">Code</span>ATOES</h1></div>
+            <div class="d">
+            <h2>
+              <!--Tab to edit-->
+              <span class="u2">L</span>ogin
+            </h2>
+            <form class="quote">
+  						
+  						
+  							<label>Email</label><br>
+  							<input type="email" placeholder="email" required    id="emailInput"></br>
+  						
+  					
+  							<label>Codigo</label><br>
+  							<input  id="passwordInput"  type="password"placeholder="código" required ></input>
+  						</br>
+  						<button class="button_1" type="submit">Enviar</button>
+  						<div id="message"></div>
+					</form>
+					</br>
+					</br>
+					<p>Esqueci meu <a href="#">código</a></p>
+					
+			<div class="divider">
+  <div class="line"></div>
+  <div class="or">ou</div>
+  <div class="line"></div>
+</div>
+
+					<p>Requisitar <a href="#">credenciais</a></p>
+					</div>
 </body>
+
 </html>
